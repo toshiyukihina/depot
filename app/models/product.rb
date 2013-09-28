@@ -6,6 +6,6 @@ class Product < ActiveRecord::Base
   validates :title, uniqueness: true
   validates :image_url, allow_blank: true, format: {
   	with: %r{\.(gif|jpg|png)$}i,
-  	message: 'is must be GIF, JPG or PNG image.'
+  	message: 'must be GIF, JPG or PNG image.'
   }
 end
